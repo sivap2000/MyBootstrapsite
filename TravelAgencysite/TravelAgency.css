@@ -1,0 +1,567 @@
+body{
+    margin:0;
+    padding:0;
+ }  
+  
+  ul.TopNav{
+     position: fixed;
+     top:0;
+     left:0;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+    background-color:black;
+    list-style: none;
+    z-index: 2;
+    transition:all 0.4s linear;
+    /* box-shadow: 3px 3px 4px rgb(56, 53, 53); */
+     
+}
+ul.TopNav li{
+    float:left;
+    transition:all 0.5s linear;
+}
+ ul.TopNav li a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    padding:16px 16px;
+    font-size:18px;
+    transition:all 0.2s linear;
+ }
+ul.TopNav li a:hover:not(.active){
+    
+    color:lightgrey;
+}
+ ul.TopNav li .active{
+    color:lightgrey;
+}
+ul.TopNav .DisappearRight{display:none;}
+
+.FrontDiv{
+ position:relative;
+   width:100%;
+   height:570px;
+    margin-top:59px;
+    background-image:linear-gradient(to bottom right,#c04848,rgb(69, 69, 121));
+}
+.FrontDiv .box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    text-align:center;
+    
+}
+.FrontDiv .box h1{
+font-size:28px;
+}
+.FrontDiv .box h2{
+   font-size:45px;
+   margin-top:19px;
+   margin-bottom:10px;
+   
+   }
+.FrontDiv .box .btn-Class{padding:10px 0px;}
+.FrontDiv .box .btn-Class button{
+          padding:13px 24px;
+          border-radius:30px;
+          margin:0px 7px;
+          cursor:pointer;
+          font-size:15px;
+          outline:none;
+          transition:all 0.3s ease-out;
+}
+.FrontDiv .box .btn-Class .btn-1{
+    background-color: cornflowerblue;
+    border:1px solid cornflowerblue;
+    color:white;
+}
+.FrontDiv .box .btn-Class .btn-2{
+background-color:crimson;
+    border:1px solid crimson;
+    color:white;
+}
+.FrontDiv .box .btn-Class .btn-1:hover{
+        background-color:white;
+        border:3px solid rgb(207, 35, 35);
+        color:black;
+        margin-top:10px;
+}
+.FrontDiv .box .btn-Class .btn-2:hover{
+background-color:white;
+border:3px solid rgb(207, 35, 35);
+        color:black;
+        margin-top:10px;
+}
+
+.BodyDiv{
+    text-align:center;
+ }
+.BodyDiv .BodyDiv-Header .Travel-h2{margin-top:35px;margin-bottom:15px;font-size: 30px;color: rgb(42, 78, 145);}
+ 
+.BodyDiv .UpcomingT-Div, .Accordion-Container,.ReviewContainer,.Login-Center,.Youtube-Container{
+    max-width:900px;
+    margin:auto;
+    padding:0px 10px !important;
+  }
+.BodyDiv .UpcomingT-Div .TourCard{
+    float:left;
+    width:23.8%;
+      margin:5px;
+      box-sizing:border-box;
+     border-radius:5px;
+     box-shadow: 5px 5px 10px rgb(97, 88, 88);
+     background-color: white;
+     cursor:pointer;
+  }
+  .BodyDiv .UpcomingT-Div .TourCard:hover{
+    box-shadow: 10px 10px 15px rgb(62, 104, 182);
+  }
+  .BodyDiv .UpcomingT-Div .TourCard .Card-body{
+      padding:8px 12px;
+      text-align: center;
+  }
+  .BodyDiv .UpcomingT-Div .TourCard .Card-body .Card-h2{
+      margin:0;
+      padding:0;
+    padding:13px 0px;
+     color:rgb(62, 104, 182);    
+}
+    .BodyDiv .UpcomingT-Div .TourCard .Card-body .Booking-btn{
+        
+       padding:8px 18px;
+       background-color:rgb(92, 134, 212);
+       border: rgb(92, 134, 212) ;
+       border-radius:6px;
+       outline:none;
+       margin:8px 0px;
+       color:white;
+       cursor:pointer;
+       font-size:14px;
+       transition:all 0.3s linear;
+    }
+    .BodyDiv .UpcomingT-Div .TourCard .Card-body .Booking-btn:hover{
+        background-color:rgb(62, 104, 182);
+        border: rgb(62, 104, 182);
+    }
+ .BodyDiv .UpcomingT-Div::after{
+      content: "";
+      display:table;
+      clear:both;
+  }
+
+ .BodyDiv .Accordion-Container{position:relative;
+margin-top:40px;}
+  
+ 
+   .Accordion-Container .Accordion-btn {
+       
+       /* display:block; */
+       width:100%;
+       padding:15px;
+       text-align:center;
+       background-color:rgb(199, 153, 97);
+       border:rgb(199, 153, 97);
+       outline:none;
+       color:white;
+        font-size:18px;
+       cursor:pointer;
+       transition:all 0.2s linear;
+    clear:left;
+   }
+   .Accordion-Container .Accordion-btn.Active{
+    background-color: rgb(161, 101, 26);
+       border: rgb(161, 101, 26);   
+   }
+   .Accordion-Container .Accordion-btn:hover{
+       background-color: rgb(161, 101, 26);
+       border: rgb(161, 101, 26);
+   }
+   .BodyDiv .Accordion-Container .Accordion-content {
+       max-height:0;overflow:hidden;transition:all 0.6s ease;
+       
+}
+ 
+   .BodyDiv .Accordion-Container .Accordion-content .Acc-container .Acc-Card{
+     display: block;
+     float: left;
+    width:23.8%;
+    margin:5px;
+    margin-top:25px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 9px rgb(119, 108, 108);
+    cursor:pointer;
+   } 
+   .BodyDiv .Accordion-Container .Accordion-content .Acc-container .Acc-Card:hover{
+       box-shadow:4px 4px 8px rgb(161, 101, 26);
+   }
+   
+   .BodyDiv .Accordion-Container .Accordion-content .Acc-container .Acc-Card .Acc-card-body{
+       box-sizing: border-box;
+   }
+   
+.BodyDiv .Accordion-Container .Accordion-content .Acc-container .Acc-Card .Acc-card-body .Acc-p{
+    display:block;
+    padding:16px 8px;
+}
+.BodyDiv .Accordion-Container .Accordion-content .Acc-text{
+    clear:left;padding:10px 0px;text-align:justify;
+
+}
+.ReviewContainer .Review-Header{text-align: center;}
+.ReviewContainer .Review-Header h2{color:rgb(121, 168, 49);margin-top:18px;margin-bottom:10px;}
+ .ReviewContainer .Reviewdiv {display:flex;justify-content: space-between;}
+
+.ReviewContainer .Reviewdiv .Review{
+    display:flex;
+    background-color:rgb(221, 233, 201);
+    box-sizing:border-box;
+    margin:5px;
+    border-radius:5px;
+}
+.ReviewContainer .Reviewdiv .Review .ReviewImg{
+  box-sizing: border-box;
+  padding:8px 12px;
+  padding-top:10px;
+  
+  /* padding: 16px 13px;  */
+}
+.ReviewContainer .Reviewdiv .Review .Review-Content{
+    box-sizing: border-box;
+     padding-top:13px;
+}
+.ReviewContainer .Reviewdiv .Review .Review-Content p{text-align:justify;}
+.ReviewContainer .Reviewdiv .Review h4{color:rgb(96, 134, 30);}
+/* hr{width:3px;background-color:rgb(128, 168, 59);} */
+  .Login-Container .Login-Background{
+     position: relative;
+     background-color:rgb(230, 191, 176);
+     padding:53px 0px;
+     box-sizing:border-box;
+ }
+ .Login-Container  h1{
+      text-align: center;
+     padding:20px 0px;
+     color:rgb(180, 99, 69);
+ }
+  .Login-Container .Login-Background .Login-Center .Login-flex{
+      position:relative;
+      display:flex;
+      box-sizing: border-box;
+  }
+ .Login-Container .Login-Background .Login-Center .Login-flex .Left-content{
+     flex:47%;
+     margin-right:20px;
+    }
+ .Login-Container .Login-Background .Login-Center .Login-flex .Right-content{
+     flex:50%;
+     position: relative;
+     margin-left:20px;
+     text-align:center;
+     background-color: rgb(226, 151, 123);
+      padding:0px 0px;
+      box-sizing:border-box;
+      border-radius:7px;
+ }
+ .Login-flex .Right-content form{
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%,-50%); 
+ } 
+ .Login-flex .Right-content input:not(.btn-submit){
+    color:rgb(175, 89, 57);
+     display:inline-block;
+      width:100%;
+     margin:10px 0px;
+     padding:15px 17px;
+     font-size:17px;
+     box-sizing:border-box;
+     border:2px solid rgb(175, 89, 57);
+     outline:none;
+     text-align:center;
+     border-radius:30px;
+ }
+ .Login-flex .Right-content .btn-submit{
+        display:inline-block;
+        width:50%;
+        padding:15px 17px;
+        font-size:17px;
+        border-radius:30px;
+        margin-top:15px;
+        border:2px solid rgb(175, 89, 57);
+        outline:none;
+        color:white;
+        background-color:rgb(175, 89, 57);
+        cursor:pointer;
+ }
+ .Login-flex .Right-content .btn-submit:hover{
+     opacity:0.7;
+ }
+ .Youtube-Container{
+     display:block;
+     margin-top:20px;
+ }
+ footer{
+     /* width:100%; */
+     color:white;
+     padding:23px 10px;
+     background-color: rgb(32, 27, 27);
+ }
+ /* footer h3{line-height:23px;} */
+ .Modal-Container{
+     display: none;
+     position:fixed;
+     top:0;
+     bottom:0;
+     left:0;
+     right:0;
+     width:100%;
+     height:100%;
+     /* filter: blur(4px); */
+     background-color: rgba(0,0, 0, 0.7);
+     transition:display 5s linear;
+ }
+ .Modal-Container .Modal-body{
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%,-50%);
+     background-color: white;
+      width:35%;
+      border-radius: 10px;
+     animation:Left 0.5s linear;
+ }
+ .Modal-Container .Modal-body form label,input,select{
+     display:block;
+     box-sizing: border-box;
+ }
+ .Modal-Container .Modal-body form{
+    padding:15px;
+ 
+ }
+ 
+ .Modal-Container .Modal-body form label{
+     margin:10px 0px;
+     font-weight:10px;
+ }
+ .Modal-Container .Modal-body form input:not(.Modal-sumbitBtn),select{
+     padding:14px 4px;
+     font-size:17px;
+     width:100%;
+     border:2px solid rgb(175, 40, 175);
+     outline:none;
+     border-radius:30px;
+     text-align:center;
+    }
+    .Modal-Container .Modal-body .Modal-header{
+        position: relative;
+        text-align: center;
+        padding:18px 0px;
+        background-color: rgb(175, 40, 175);
+        color:white;
+    }
+    .Modal-Container .Modal-body .Modal-header span{
+        position:absolute;
+        top:10px;
+        right:10px;
+        font-size: 25px;
+        cursor:pointer;
+    }
+    .Modal-Container .Modal-body form .Modal-sumbitBtn{
+        width:100px;
+        /* margin: auto; */
+        padding:12px 20px;
+        color:white;
+        background-color:rgb(175, 40, 175);
+        border:none;
+        outline:none;
+        font-size: 17px;
+        border-radius: 30px;
+        margin:10px 0px;
+        cursor:pointer;
+        box-sizing: border-box;
+    }
+    @keyframes Left{
+        from {left:-1%;opacity:0;}
+        to {left:50%;opacity:1;}
+    }
+   @media screen and (max-width:760px){
+    ul.TopNav li:not(:first-child){
+           display:none;
+       }
+       ul.TopNav li.DisappearRight{
+           display:block;
+           float:right;
+       }
+       .Login-Container .Login-Background .Login-Center{
+        max-width:600px;
+        margin:auto;
+    }
+       
+    .Login-Container .Login-Background .Login-Center .Login-flex{
+        flex-direction: column;
+        /* box-sizing: border-box; */
+     }
+    .Login-Container .Login-Background .Login-Center .Login-flex .Left-content{
+         display:none; 
+    }
+    .Login-Container .Login-Background .Login-Center .Login-flex .Right-content{
+        flex:none;
+        position: relative;
+        display:block;
+        padding:0px 40px;
+         margin-left:0;
+        height:330px;
+        width:100%;
+        background-color:rgb(226, 151, 123);
+        /* box-sizing:border-box; */
+    }
+    .Login-Container .Login-Background .Login-Center .Login-flex .Right-content form{
+        position: relative;
+        /* display:block;  
+        box-sizing: border-box; */
+        
+    }
+    .Login-flex .Right-content input:not(.btn-submit){
+                   margin:8px 0px;
+         padding:12px 14px;
+         
+     }
+     .Login-flex .Right-content .btn-submit{
+           padding:12px 14px;
+             margin-top:13px;
+             margin-bottom: 10px;
+     }
+}
+@media screen and (max-width:670px){
+    .FrontDiv{
+        height:470px;
+    }
+    .FrontDiv .box{
+        width:90%;
+    }
+    .FrontDiv .box h2{
+        font-size: 25px;
+    }
+   
+    .FrontDiv .box p{display: none;}
+    .FrontDiv .box .btn-Clas{padding:7px 0px;}
+.FrontDiv .box .btn-Class button{
+        display:inline-block;
+        padding:15px 24px;
+          border-radius:30px;
+          margin:7px 7px;
+          /* cursor:pointer; */
+          /* outline:none; */
+          /* transition:all 0.3s ease-out;  */
+}
+
+}
+@media screen and (max-width:930px){
+    .Modal-Container .Modal-body{
+        width:80%;
+    }
+    .Modal-Container .Modal-body .Modal-header{
+         padding:9px 0px;
+         
+    }
+    .Modal-Container .Modal-body form input:not(.Modal-sumbitBtn),select{
+        padding:11px 2px;
+        }
+       .Modal-Container .Modal-body form .Modal-sumbitBtn{
+       padding:10px 20px;
+     margin:8px 0px;
+     }
+}
+@media screen and (max-width:760px){
+    ul.TopNav.responsive{
+           position:fixed;
+    }
+    ul.TopNav.responsive .right,.DisappearRight{
+        position:absolute;
+        top:0;
+        right:0;
+    }
+    ul.TopNav.responsive li{
+        display:block;
+        float:none;
+        text-align:center;
+    }
+    
+
+
+}
+@media screen and (max-width: 892px) {
+    .BodyDiv .UpcomingT-Div{
+        max-width:600px;
+        margin:auto;
+    }
+    .BodyDiv .UpcomingT-Div .TourCard{
+            width:46.8%; margin:5px;      
+       }    
+       .BodyDiv .UpcomingT-Div .TourCard .Card-p{display: block;text-align: center;}
+       .BodyDiv .Accordion-Container .Accordion-content .Acc-container{
+        max-width:600px;
+        margin:auto;
+        }
+       .BodyDiv .Accordion-Container .Accordion-content .Acc-container .Acc-Card{
+           width:46.8%;margin:5px;
+       }
+       .ReviewContainer .Reviewdiv{
+        display:flex;
+         flex-direction:column;
+        box-sizing:border-box;
+        margin:0;
+        margin-bottom:5px;
+    }
+    .ReviewContainer .Reviewdiv .Review .ReviewImg{flex:20%;}
+    .ReviewContainer .Reviewdiv .Review .ReviewImg img{height:85px;width:85px;}
+    .ReviewContainer .Reviewdiv .Review .Review-Content{flex:80%;}
+   
+   }
+   @media screen and (max-width: 572px) {
+    .BodyDiv .UpcomingT-Div{
+        max-width:360px;
+        margin:auto;
+    }
+    .BodyDiv .UpcomingT-Div .TourCard{
+            width:100%;
+            margin:5px 0px;       
+       }    
+       .BodyDiv .Accordion-Container .Accordion-content .Acc-container{
+        max-width:360px;
+        margin:auto;
+       }
+       .BodyDiv .Accordion-Container .Accordion-content .Acc-container .Acc-Card{
+           width:100%;
+           margin:5px 0px;
+       }
+       .BodyDiv .Accordion-Container .Accordion-content .Acc-container .Acc-Card.DisappearOn-sm{
+           display:none;
+       }
+       .Youtube-Container iframe{
+           height:270px;
+       }
+       
+  }
+  @media screen and (max-width: 504px){
+    .ReviewContainer .Reviewdiv .Review .ReviewImg{padding:9px 8px;}
+    .ReviewContainer .Reviewdiv .Review .Review-Content{
+        padding:8px 10px;
+    }
+    .ReviewContainer .Reviewdiv .Review .Review-Content h4{
+        padding:0;
+        margin:0;
+        padding-top:15px;
+    }
+    .ReviewContainer .Reviewdiv .Review .ReviewImg img{
+        height:57px;
+        width:57px;
+    }
+  }
+ 

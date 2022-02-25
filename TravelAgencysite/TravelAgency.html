@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TravelAgency Website</title>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" type="text/css" href="TravelAgency.css">
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <style>
+      
+      body{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+    </style>
+   </head>
+    <body>
+                            <!---  Nav section    -->
+
+            <ul class="TopNav" id="topNav">
+                 <li><a href="#"class="active">Home</a></li>
+                <li><a href="#Login-container">Login</a></li>
+                <li><a href="#Tourcard">Upcoming Events</a></li>
+                <li><a href="#PopularPlaces">Popular Places</a></li>
+                <li><a href="">Contacts</a></li>
+                <li class="right"><a href="javascript:void(0);"></a></li>
+                <li class="DisappearRight"><a href="javascript:void(0);"  onclick="NavFunc()"><i class="bi bi-grid"></i></a></li>
+            </ul>
+
+
+          <!--------------  EntranceBody    ------------>
+          
+        <div class="FrontDiv">
+          <!-- <img src="" alt="ThanjavurBigTemple" width="100%" height=""> -->
+            <div class="box">
+                   <h1><i class="fa-solid fa-bars"></i>Travel tamilnadu</h1>
+                 <h2><b>Dont wait to travel with us</b></h2>
+                 <p>Make your travel wonderful with us</p>
+                 <div class="btn-Class">
+                    <button class="btn-1">Read More</button>
+                    <button class="btn-2" onclick="document.getElementById('Modal').style.display='block';">Book Now</button>
+                 </div>
+                 
+            </div>
+        </div>
+     
+          <!---------------BodyContent Starts from here  ---------------->
+
+        <div class="BodyDiv" id="Tourcard">
+          <div class="BodyDiv-Header"><h2 class="Travel-h2">Upcoming Travel places</h2>
+            <p>Don't wait to book and travel</p></div>
+            
+    <div class="UpcomingT" style="background-color:rgb(188, 206, 240);padding:53px 0px;">
+  <div class="UpcomingT-Div">
+       <div class="TourCard" >
+           <img src="./Images/sithannavaasal.jpg" width="100%" height="150px" alt="SithannavaasalImg">
+           <div class="Card-body">
+                <h5 class="Card-h2">Sithannavasal</h5>
+                <span class="Card-p">Travelling Date:11,12,2021</span>
+                <button class="Booking-btn" onclick="document.getElementById('Modal').style.display='block';">Book Now</button>
+           </div> 
+       </div>
+       <div class="TourCard">
+        <img src="./Images/ThirumayamFort.jpg" width="100%" height="150px" alt="ThirumayamFortImg">
+        <div class="Card-body">
+             <h5 class="Card-h2">ThirumayamFort</h5>
+             <span class="Card-p">Travelling Date:11,12,2021</span>
+             <button class="Booking-btn" onclick="document.getElementById('Modal').style.display='block';">Book Now</button> 
+        </div> 
+       </div>
+       <div class="TourCard">
+         <img src="./Images/ThiruvalluvarStaue.jpg" width="100%" height="150px" alt="ThiruvalluvarStatueImg">
+        <div class="Card-body">
+             <h5 class="Card-h2">ThiruvalluvarStatue</h5>
+             <span class="Card-p">Travelling Date:11,12,2021</span>
+             <button class="Booking-btn" onclick="document.getElementById('Modal').style.display='block';">Book Now</button>
+        </div>  
+       </div>
+       <div class="TourCard">
+         <img src="./Images/Mahaapalipuram.jpg" width="100%" height="150px" alt="MahapalipuramImg">
+        <div class="Card-body">
+             <h5 class="Card-h2">Mahabalipuram</h5>
+             <span class="Card-p">Travelling Date:11,12,2021</span>
+             <button class="Booking-btn" onclick="document.getElementById('Modal').style.display='block';">Book Now</button>
+        </div> 
+       </div>
+  </div>
+</div>
+                            <!----------------- Accordion Container   ------------------>
+  <div class="Accordion-Container"  id="PopularPlaces">
+    <div class="BodyDiv-Header"><h2 class="Travel-h2" style="color:rgb(161, 101, 26);">Most Popular Places</h2>
+      <p>Get to know every Places</p></div>
+          
+              <button class="Accordion-btn Active" id="DefaultOpen">Madurai</button>
+              <div class="Accordion-content">
+                 <div class="Acc-container">
+                  <div class="Acc-Card">
+                     
+                    <img src="./Images/MeenatchiAmmanTemple.jpeg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Meenatchi Temple</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card">
+                     
+                    <img src="./Images/Pazhamudhircholai.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Pazhamudhircholai</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card DisappearOn-sm">
+                     
+                    <img src="./Images/KoodalAzhagar Temple.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Koodal azhagar temple</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card DisappearOn-sm">
+                     
+                    <img src="./Images/VaighaiDam.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Vaighai Dam</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="Acc-text">
+                  <p>Madurai is an energetic, ancient city on the Vaigai River
+                     in the South Indian state of Tamil Nadu. 
+                    Its skyline is dominated by the 14 colorful gopurams 
+                    (gateway towers) of Meenakshi Amman Temple.
+                     Covered in bright carvings of Hindu gods, the
+                      Dravidian-style temple is a major pilgrimage site.
+                      Millions attend the processions and ceremonies of 
+                      April's Chithirai Festival celebrating Meenakshi
+                       and Lord Vishnu.</p>
+
+                  </div> 
+              </div>
+                
+              
+              <button class="Accordion-btn">Coimbatore</button>
+
+              <div class="Accordion-content">
+                <div class="Acc-container">
+                  <div class="Acc-Card" >
+                     
+                    <img src="./Images/Covai1.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Marudhamalai Temple</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card" >
+                     
+                    <img src="./Images/Covai2.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Covai Kuttralam</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card DisappearOn-sm">
+                     
+                    <img src="./Images/Covai3.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Vellayangiri Mountains</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card DisappearOn-sm">
+                     
+                    <img src="./Images/Covai4.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Kovai wonderland</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="Acc-text">
+                  <p> Coimbatore is a city in the south Indian state of Tamil Nadu. 
+                    To the northwest is the centuries-old, Dravidian-style
+                     Arulmigu Subramaniyaswami Temple,
+                     Marudamalai.
+                     The colorful and intricately carved Arulmigu
+                      Patteeswarar Swamy Temple lies southeast of here.
+                       In the center, the Gass Forest Museum has a 
+                       huge collection of preserved animals and tree trunks.
+                       Southeast, birds and butterflies inhabit Singanallur</p>
+
+                  </div> 
+                </div>
+              
+              <button class="Accordion-btn">Chennai</button>
+
+              <div class="Accordion-content">
+                 <div class="Acc-container">
+                  <div class="Acc-Card">
+                     
+                    <img src="./Images/Chennai1.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Mahabalipuram</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card">
+                     
+                    <img src="./Images/Chennai2.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Valluvar Kottam</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card DisappearOn-sm">
+                     
+                    <img src="./Images/Chennai3.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Guindy National Park</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card DisappearOn-sm">
+                     
+                    <img src="./Images/Chennai4.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">1000light Mosque</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="Acc-text">
+                  <p>Chennai, on the Bay of Bengal in eastern India, is the capital of the 
+                    state of Tamil Nadu. 
+                    The city is home to Fort St. George, built in 1644 and now a museum 
+                    showcasing the citys roots as a British military garrison
+                     and East India Company trading outpost, when it was called Madras.
+                      Religious sites include Kapaleeshwarar Temple,
+                       adorned with carved and painted gods, and St. Marys,
+                        a 17th-century Anglican church</p>
+
+                  </div>
+                </div>
+             
+              <button class="Accordion-btn">Kanniyakumari</button>
+
+              <div class="Accordion-content">
+                <div class="Acc-container">
+                  <div class="Acc-Card">
+                     
+                    <img src="./Images/Kumari1.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Thiruvalluvar statue</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card">
+                     
+                    <img src="./Images/Kumari2.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Kanyakumari Beach</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card DisappearOn-sm">
+                     
+                    <img src="./Images/Kumari3.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Amman Temple</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card DisappearOn-sm">
+                     
+                    <img src="./Images/Kumari4.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Thirparappu Falls</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="Acc-text">
+                  <p>A top sightseeing tourist place in Kanyakumari is  thirparapu falls , vivekaananda statue 
+                    memorial , thenumaariamman temple, kumari amman temple , padpanaadhapuram palace.
+                   Coimbatore is  a second mega city and capital of Tamilnadu.
+                   Coimbatore is  a second mega city and capital of Tamilnadu </p>
+                   
+               </div> 
+                </div>
+               
+              <button class="Accordion-btn">Sivagangai</button>
+
+              <div class="Accordion-content">
+                 <div class="Acc-container">
+                  <div class="Acc-Card">
+                     
+                    <img src="./Images/Siva1.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Kaaraikudi OldHouses</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card">
+                     
+                    <img src="./Images/Siva2.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Wonders of Karaikudi</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card DisappearOn-sm">
+                     
+                    <img src="./Images/Siva3.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Pillaiyaarpatti vinayagar</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card DisappearOn-sm">
+                     
+                    <img src="./Images/Siva4.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Kundrakudi Temple</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="Acc-text">
+                  <p>As you enter the sleepy district headquarters of sivagangai ,
+                     be prepared to welcome by the tingling bells
+                    and strong essence of incence sticks. Soaking in the very essence 
+                    of tamil tradition, the town is best 
+                    described as chaotic and soulfull sprinkled with temples and a
+                     host of other religious places. sivagangai
+                    is yet another tourism destination in the state of tamilnadu.  </p>
+
+                  </div> 
+                </div>
+               
+              <button class="Accordion-btn">Pudukkotai</button>
+
+              <div class="Accordion-content">
+                 <div class="Acc-container">
+                  <div class="Acc-Card">
+                     
+                    <img src="./Images/NaarthaamalaiT.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Sithannavasal carvings</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card" >
+                     
+                    <img src="./Images/NaarthaamalaiT.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Naarthamalai Temple</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card DisappearOn-sm">
+                     
+                    <img src="./Images/Kodiyakkarai.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">Kodiyakkarai</span>
+                    </div>
+                  </div>
+                  <div class="Acc-Card DisappearOn-sm">
+                     
+                    <img src="./Images/AavudaiyaarTemple.jpg" width="100%" height="125px">
+                   <div class="Acc-card-body">
+                         <span class="Acc-p">AavudaiyaarKovil</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="Acc-text">
+                  <p>Pudukkottai District is one of the 38 districts of Tamil Nadu
+                     state in southern India.
+                    The city of Pudukkottai is the district headquarters. 
+                    It is also known colloquially as Pudhugai.
+                    Coimbatore is  a second mega city and capital of Tamilnadu</p>
+
+                  </div>
+                </div>
+               
+          
+           </div>
+  </div> 
+
+             <!------------------ Reviews content strart from here------------------------------->
+                  <div class="ReviewContainer">
+                    <div class="Review-Header"><h2 class="Review-h2" style="color: rgb(150, 212, 57);">Reviews</h2>
+                      <p>Don't wait to book and travel</p></div>
+                      
+                        <div class="Reviewdiv">
+                          <div class="Review firstReviewDIV">
+                             <div class="ReviewImg">
+                               <img src="./Images/i16.jpeg" height="70px" width="70px" alt="ProfileImg" style="border-radius:50%;">
+                              </div>
+                              <hr>
+                              <div class="Review-Content">
+                                <h4>John paul</h4>
+                                <p>It was been a good experience to travel with them and
+                                  wishing to travel again
+                                </p>
+                                <p style="color: grey;">4.5 / 5 Rating</p>
+                              </div>
+                          </div>
+                          <div class="Review SecondReviewDIV">
+                           <div class="ReviewImg">
+                             <img src="./Images/cruise.jpg" height="70px" width="70px" alt="CruiseProfileImg" style="border-radius:50%;">
+                            </div>
+                            <hr>
+                            <div class="Review-Content">
+                              <h4>Tamil Selvan</h4>
+                              <p>During Traveling they explained about every places and 
+                                their history clearly
+                               </p>
+                              <p style="color: grey;">4.2 / 5 Rating</p>
+                            </div>
+                        </div>
+                         </div>
+                      </div>
+ </div>
+                              <!------ Login Page ------->
+                  <div class="Login-Container" style="margin-top:20px;" id="Login-container">
+                  <h1>Login</h1>
+                       <div class="Login-Background">
+                         <div class="Login-Center">
+                             <div class="Login-flex">
+                              <div class="Left-content">
+                                <img src="./Images/TravelImg.webp" width="100%" height="400px" alt="TravelImage">
+                              </div>
+                              <div class="Right-content">
+                                   <p><i></i></p>
+                                <form>
+                                     <input type="text" placeholder="Your Name" name="Name">
+                                     <input type="email" placeholder="Your Email" name="E-mail">
+                                     <input type="password" placeholder="password" name="Password">
+                                     <input type="submit" value="submit" class="btn-submit">
+                                </form>
+                              </div>
+                             </div>
+                            
+                          </div>
+                       </div>
+                    </div>
+                    <!------------------  Iframe Youtube video -->
+   <div class="Youtube-Container"> 
+      <iframe height="400px" width="100%" src="https://www.youtube.com/embed/5s5wZqhljWQ"></iframe>
+   </div>
+       
+                 <!---------------- PopUp box  ----------------->
+
+        <div class="Modal-Container" id="Modal">
+            <div class="Modal-body">
+              <div class="Modal-header">
+                <h3>Book Now</h3>
+                <span  onclick="document.getElementById('Modal').style.display='none';">&times;</span>
+              </div>
+                <form>
+                   <label for="Your-name">Your Name </label>
+                   <input type="text" id="Your-name" name="YourName" placeholder="Enter YourName">
+                   <label for="Your-email">Your Email </label>
+                   <input type="email" placeholder="Enter YourEmail" id="Your-email" name="Youremail">
+                   <label for="SelectBox">Select the place to visit</label>
+                   <select id="SelectBox" name="VisitingPlace">
+                        <option value="Marudhamalai">Marudhamalai</option>
+                        <option value="ThirumayamFort">ThirumayamFort</option>
+                        <option value="Malaikottai">Malaikottai</option>
+                        <option value="KumariBeach">KumariBeach</option>
+                        <option value="Mahabalipuram">Mahabalipuram</option>
+                        <option value="Ooty">Ooty</option>
+                        <option value="AavudaiyaarKovil">AavudaiyaarKovil</option>
+                   </select>
+                   <input type="submit" value="Submit" class="Modal-sumbitBtn">
+                </form>
+            </div>
+        </div>
+         <footer>
+           <h3>Designed by siva from EVL, Pudukkottai, TN</h3>
+         </footer>
+    <script>
+        function NavFunc(){
+             var x = document.getElementById("topNav");
+             if(x.className === "TopNav"){
+                 x.className += " responsive";
+
+             }else{
+                x.className = "TopNav";
+             }
+        }
+
+        var AccBtn = document.getElementsByClassName("Accordion-btn");
+           var i;
+           
+           for(i=0; i<AccBtn.length; i++){
+                AccBtn[i].addEventListener("click", function(){
+                      this.classList.toggle("Active");
+                        var Sibling =  this.nextElementSibling;
+                       if(Sibling.style.maxHeight){
+                      Sibling.style.maxHeight = null;
+                     }else{
+                      Sibling.style.maxHeight = Sibling.scrollHeight + "px";}
+                     
+                 });
+
+           }
+
+           document.getElementById("DefaultOpen").click();
+           document.getElementById("DefaultOpen").className += " Active";
+    </script>
+    </body>
+</html>
